@@ -33,7 +33,7 @@ Building a tag library for Freemarker, JSP or Velocity
 
 -----------------
 <dependency>
-  <groupId>org.apache.tiles</groupId>
+  <groupId>com.github.tntim96</groupId>
   <artifactId>tiles-request-jsp</artifactId>
   <version>1.0</version>
 </dependency>

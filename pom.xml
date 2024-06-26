@@ -27,7 +27,20 @@ under the License.
         <version>6</version>
         <relativePath />
     </parent>
-    <groupId>org.apache.tiles</groupId>
+
+    <!-- temporary only while parent pom is snapshot -->
+  <repositories>
+    <repository>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <id>apache.snapshots</id>
+      <name>Apache Snapshot Repository</name>
+      <url>https://repository.apache.org/snapshots</url>
+    </repository>
+  </repositories>
+
+    <groupId>com.github.tntim96</groupId>
     <artifactId>tiles-autotag</artifactId>
     <version>1.2</version>
     <packaging>pom</packaging>
@@ -80,12 +93,12 @@ under the License.
                 <scope>test</scope>
             </dependency>
             <dependency>
-                <groupId>org.apache.tiles</groupId>
+                <groupId>com.github.tntim96</groupId>
                 <artifactId>tiles-autotag-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.tiles</groupId>
+                <groupId>com.github.tntim96</groupId>
                 <artifactId>tiles-autotag-core-runtime</artifactId>
                 <version>${project.version}</version>
             </dependency>
