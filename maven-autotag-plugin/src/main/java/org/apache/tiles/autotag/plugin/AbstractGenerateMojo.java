@@ -31,6 +31,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import com.thoughtworks.xstream.security.AnyTypePermission;
 import org.apache.maven.model.Resource;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -106,6 +107,7 @@ public abstract class AbstractGenerateMojo extends AbstractMojo {
         	InputStream stream = templateSuite.getInputStream();
             try {
 	            XStream xstream = new XStream(new Sun14ReflectionProvider());
+		    xstream.addPermission(AnyTypePermission.ANY);
 	            suite = (TemplateSuite) xstream.fromXML(stream);
             } finally {
 	            stream.close();

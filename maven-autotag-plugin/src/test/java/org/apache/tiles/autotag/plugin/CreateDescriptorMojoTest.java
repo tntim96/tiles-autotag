@@ -40,6 +40,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import com.thoughtworks.xstream.security.AnyTypePermission;
 import org.apache.commons.io.FileUtils;
 import org.apache.maven.model.Resource;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -106,6 +107,7 @@ public class CreateDescriptorMojoTest {
         mojo.execute();
         InputStream sis = new FileInputStream(new File(temp, "META-INF/template-suite.xml"));
         XStream xstream = new XStream(new Sun14ReflectionProvider());
+        xstream.addPermission(AnyTypePermission.ANY);
         TemplateSuite suite = (TemplateSuite) xstream.fromXML(sis);
         sis.close();
         assertEquals("test", suite.getName());
