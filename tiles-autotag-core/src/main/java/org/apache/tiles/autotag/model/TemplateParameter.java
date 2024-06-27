@@ -74,6 +74,7 @@ public class TemplateParameter {
      * @param type The type of the parameter.
      * @param defaultValue The default value, as it will be written in Java code.
      * @param required Indicates that this parameter is required.
+     * @param request The request.
      */
     public TemplateParameter(String name, String exportedName, String type, String defaultValue, boolean required, boolean request) {
         this.name = name;
@@ -158,7 +159,7 @@ public class TemplateParameter {
     }
 
     /**
-     * Indicates that this parameter implements {@link Request}.
+     * Indicates that this parameter is a request
      *
      * @return <code>true</code> if the parameter is a request.
      */

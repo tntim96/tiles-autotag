@@ -33,7 +33,7 @@ import org.junit.Test;
 public class TemplateParameterTest {
 
     /**
-     * Tests {@link TemplateParameter#TemplateParameter(String, String, String, String, boolean)}.
+     * Tests {@link TemplateParameter#(String, String, String, String, boolean)}.
      */
     @Test
     public void testTemplateParameter() {

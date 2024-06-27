@@ -40,7 +40,7 @@ public @interface Parameter {
     String SAME_NAME = "USE THE SAME NAME";
 
     /**
-     * Returns the name of the exported property name.
+     * @return The name of the exported property name.
      */
     String name() default SAME_NAME;
 

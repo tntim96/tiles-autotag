@@ -129,7 +129,7 @@ public class QDoxTemplateSuiteFactory implements TemplateSuiteFactory {
     /**
      * Sets the request class used by the suite.
      *
-     * @param requestClass The request class name.
+     * @param requestClass The request class to use. to use.
      */
     public void setRequestClass(String requestClass) {
         this.requestClass = requestClass;

@@ -42,6 +42,7 @@ public interface TemplateClassGenerator {
      * @param clazz The template class.
      * @param parameters Configuration parameters.
      * @param runtimeClass The RequestBuilder implementation.
+     * @param requestClass The RequestBuilder implementation.
      */
     void generate(OutputLocator directory, String packageName, TemplateSuite suite,
             TemplateClass clazz, Map<String, String> parameters,

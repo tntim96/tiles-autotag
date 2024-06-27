@@ -111,6 +111,8 @@ public abstract class AbstractTemplateClassGenerator implements
      * @param suite The template suite.
      * @param clazz The template class.
      * @param parameters The map of parameters.
+     * @param runtimeClass The RequestBuilder implementation.
+     * @param requestClass The request class to use.
      * @return The template path.
      */
     protected abstract String getTemplatePath(
@@ -124,6 +126,8 @@ public abstract class AbstractTemplateClassGenerator implements
      * @param suite The template suite.
      * @param clazz The template class.
      * @param parameters The map of parameters.
+     * @param runtimeClass The RequestBuilder implementation.
+     * @param requestClass The request class to use.
      * @return The template path.
      */
     protected abstract String getFilename(String packageName,
@@ -137,6 +141,8 @@ public abstract class AbstractTemplateClassGenerator implements
      * @param suite The template suite.
      * @param clazz The template class.
      * @param parameters The map of parameters.
+     * @param runtimeClass The RequestBuilder implementation.
+     * @param requestClass The request class to use.
      * @return The template path.
      */
     protected abstract String getDirectoryName(

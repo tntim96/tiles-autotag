@@ -31,6 +31,7 @@ public interface OutputLocator {
 	 * Returns a writer for the file at this path.
 	 * @param resourcePath the path of the file to write
 	 * @return a Writer for the file.
+	 * @throws IOException
 	 */
 	OutputStream getOutputStream(String resourcePath) throws IOException;
 	
