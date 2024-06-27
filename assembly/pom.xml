@@ -179,7 +179,7 @@
     </dependency>
 
     <dependency>
-      <groupId>org.apache.tiles.autotag.plugin</groupId>
+      <groupId>com.github.tntim96.tiles.autotag.plugin</groupId>
       <artifactId>maven-autotag-plugin</artifactId>
       <version>${project.version}</version>
     </dependency>
